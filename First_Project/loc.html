@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Miraliles</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="img/logo.png" alt="logo"></a>
+		</div>
+		<nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html">HOME</a>
+				<a href="projects.html">PROJECTS</a>
+				<a href="blog.html">BLOG</a>
+				<a href="contact.html">CONTACT</a>
+				<a href="about.html">ABOUT</a>
+				<a href="services.html">SERVICES</a>
+				<a href="file:///D:/First_Project/location.html">LOCATION</a>
+				<a id="menu" href="#" class="icon">&#9776;</a>
+			</div>
+		</nav>
+	</header>
+	
+	<main>
+		<h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 39.7399612, lng: -103.13822};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 5, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdn_npa3eyTqCj3frYmueT8ruUUmG_gZ0&callback=initMap">
+    </script>
+	</main>
+
+	<footer>
+		<nav>
+				<a href="index.html">HOME</a>
+				<a href="C:/First_Project/projects.html">PROJECTS</a>
+				<a href="blog.html">BLOG</a>
+				<a href="contact.html">CONTACT</a>
+				<a href="about.html">ABOUT</a>
+				<a href="services.html">SERVICES</a>
+				<a href="locatin.html">LOCATION</a>
+		</nav>
+		<div class="logo">
+			<a href="index.html">
+				<img class="graficlogo" src="img/logo.png" alt="logo">
+			</a>
+		</div>
+		<div class="social">
+			<a href="#"><img src="img/email.png" alt="" height="50px" width="50px"></a>
+			<a href="#"><img src="img/facebook.png" alt="" height="50px" width="50px"></a>
+			<a href="#"><img src="img/google.png" alt="" height="50px" width="50px"></a>
+			<a href="#"><img src="img/pint.png" alt="" height="50px" width="50px"></a>
+		</div>
+		<p>One Code 2020</p>
+	</footer>	
+
+	<script src="js/script.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+</html>
